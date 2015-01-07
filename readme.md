@@ -39,7 +39,7 @@ For the Itinerary APIs (v1.1), full API documentation, and apps that use the API
 <a name="samplecode">SDKs / Sample code</a>
 --------------
 - [NodeJS SDK](https://github.com/concur/concur-platform-sdk-js)
-- [Objective-C/iOS](https://github.com/concur/concur-platform-sdk-dotnet)
+- [C# .NET SDK](https://github.com/concur/concur-platform-sdk-dotnet)
 
 - [Pebble SDK C/Javascript](https://developer.getpebble.com/blog/2014/09/03/Pebble-Concur-Mojio/)
 - [Windows 8 C#/XAML](https://github.com/ismaelc/Concur-Windows8-SampleCode)
@@ -47,7 +47,7 @@ For the Itinerary APIs (v1.1), full API documentation, and apps that use the API
 - [PHP/curl](http://runnable.com/UtWlKVi9ZnsnAABx/upload-receipts-to-concur-using-php-curl) (POST image receipts)
 - [Python](https://gist.github.com/Trudeaucj/09c25e79c332e93703a0) (Generate access token)
 
-- Java using [Maven](https://github.com/Trudeaucj/Concur-java-examples) or [Gradle](https://github.com/Trudeaucj/Concur-java-examples-gradle)
+- Java using [Maven](https://github.com/Trudeaucj/Concur-java-examples)
 
 
 <a name="mashup">Ideas for a Concur-powered business travel app:</a>
@@ -250,18 +250,6 @@ The subsections below provide a more detailed information on how to:
    You can view/add new expenses (and even add a receipt image!) to have a variety of data to pull for your API calls. After adding expenses, you can create a report to associate it with by tapping the "Add to Report" button (in the last screenshot above).
 
 [Back to Top](#addl)
-
-<a name="samplecode">Sample code</a>
---------------
-- [Pebble SDK C/Javascript](https://developer.getpebble.com/blog/2014/09/03/Pebble-Concur-Mojio/)
-- [Windows 8 C#/XAML](https://github.com/ismaelc/Concur-Windows8-SampleCode)
-- [Objective-C/iOS](https://github.com/concurtech/mobile-samples)
-- [C#](https://github.com/concurtech/api-samples)
-- [C#](https://gist.github.com/dberke711/c8d0c9e04c7e76220d4e) (Generate access token native flow)
-- [PHP/curl](http://runnable.com/UtWlKVi9ZnsnAABx/upload-receipts-to-concur-using-php-curl) (POST image receipts)
-- [Python](https://gist.github.com/Trudeaucj/09c25e79c332e93703a0) (Generate access token)
-- [NodeJS SDK](https://github.com/concur/concur-platform-sdk-js)
-- Java using [Maven](https://github.com/Trudeaucj/Concur-java-examples) or [Gradle](https://github.com/Trudeaucj/Concur-java-examples-gradle)
 
 <a name="example">Example apps</a>
 --
