@@ -11,20 +11,14 @@ Concur is a travel and expense software solution that lets 25M business traveler
 We are hiring!
 --
 
-[Tech MBA Intern](https://careers.peopleclick.com/careerscp/client_concur/external/gateway.do?functionName=viewFromLink&jobPostId=17870&localeCode=en-us)
+[Career Portal](https://www.concur.com/en-us/careers)
 
-[Data Science Intern](https://careers.peopleclick.com/careerscp/client_concur/external/gateway.do?functionName=viewFromLink&jobPostId=17859&localeCode=en-us)
-
-[SDET Intern](https://careers.peopleclick.com/careerscp/client_concur/external/gateway.do?functionName=viewFromLink&jobPostId=17869&localeCode=en-us)
- 
-[UX Design Intern](https://careers.peopleclick.com/careerscp/client_concur/external/gateway.do?functionName=viewFromLink&jobPostId=17871&localeCode=en-us)
- 
-[SDE Intern](https://careers.peopleclick.com/careerscp/client_concur/external/gateway.do?functionName=viewFromLink&jobPostId=17865&localeCode=en-us)
- 
-[Mobile SDE Intern](https://careers.peopleclick.com/careerscp/client_concur/external/gateway.do?functionName=viewFromLink&jobPostId=17864&localeCode=en-us)
 
 What can I do with Concur APIs?
 --
+
+[Check out the Developer Portal](https://developer.concur.com)
+[Check out the Swagger Page](https://www.concursolutions.com/api/docs/index.html#!)
 
 The **Travel/Itinerary API (v1.1)** lets you access a Concur user's itinerary, including hotel/flight booking info.  As an example, you can mash-up the Itinerary API with a restaurant database/API to provide recommendations of places to eat near a Concur user's hotel booking.
 
@@ -88,7 +82,7 @@ The subsections below provide a more detailed information on how to:
 
   1. **Get your Consumer Key**  
 
- After logging in to http://concursolutions.com, go to Administration -> Register Partner Application -> Concur Partner Application (Modify).  We need the consumer key so we can call the endpoint that would return the access token. (**Note: Get your Concur login/password from Chris at the Concur booth or email him at chris.ismael@concur.com**)
+ After logging in to http://concursolutions.com, go to Administration -> Register Partner Application -> Concur Partner Application (Modify).  We need the consumer key so we can call the endpoint that would return the access token. (**Note: Get your Concur login/password from Chris at the Concur booth or email him at ctrudeau@concur.com**)
 
   <img src='http://chrispogeek.files.wordpress.com/2014/01/untitled.png' width="600px" />
 
@@ -148,16 +142,16 @@ The subsections below provide a more detailed information on how to:
            <?xml version="1.0"?>
            <Itinerary xmlns="http://www.concursolutions.com/api/travel/trip/2010/06">
            <TripName>TechCrunch Disrupt Concur</TripName>
-           <StartDateLocal>2014-10-30T03:47:14</StartDateLocal>
-           <EndDateLocal>2014-11-06T03:47:14</EndDateLocal>
+           <StartDateLocal>2015-10-30T03:47:14</StartDateLocal>
+           <EndDateLocal>2015-11-06T03:47:14</EndDateLocal>
            <Bookings>
             <Booking>
              <Segments>
                  <Hotel>
                      <Status>HK</Status>
                      <StartCityCode>SFO</StartCityCode>
-                     <StartDateLocal>2014-10-30T07:47:14</StartDateLocal>
-                     <EndDateLocal>2014-11-06T03:47:14</EndDateLocal>
+                     <StartDateLocal>2015-10-30T07:47:14</StartDateLocal>
+                     <EndDateLocal>2015-11-06T03:47:14</EndDateLocal>
                      <Name>Times Square Hilton New York</Name>
                      <RecordLocator>Hotel Locator</RecordLocator>
                      <RoomDescription>1 KING BED ACCESSIBLE ROOM - K1RRC</RoomDescription>
@@ -171,7 +165,7 @@ The subsections below provide a more detailed information on how to:
                          <Rate>
                              <Currency>USD</Currency>
                              <Amount>10.00</Amount>
-                             <StartDatelocal>2014-05-30T07:47:14</StartDatelocal>
+                             <StartDatelocal>2015-10-30T07:47:14</StartDatelocal>
                              <IsPrimary>false</IsPrimary>
                              <SemanticsCode>ROOMRATE</SemanticsCode>
                              <PerUnit>DAY</PerUnit>
@@ -182,7 +176,7 @@ The subsections below provide a more detailed information on how to:
              </Segments>
              <RecordLocator>Disrupt123</RecordLocator>
              <BookingSource>Sample Itin for Disrupt</BookingSource>
-             <DateBookedLocal>2014-10-30T03:47:14</DateBookedLocal>
+             <DateBookedLocal>2015-10-30T03:47:14</DateBookedLocal>
            </Booking>
            <Booking>
              <Segments>
@@ -190,40 +184,41 @@ The subsections below provide a more detailed information on how to:
                      <Vendor>AA</Vendor>
                      <FlightNumber>425</FlightNumber>
                      <StartCityCode>SFO</StartCityCode>
-                     <StartDateLocal>2014-10-30T03:47:14</StartDateLocal>
+                     <StartDateLocal>2015-10-30T03:47:14</StartDateLocal>
                      <EndCityCode>NYC</EndCityCode>
-                     <EndDateLocal>2014-11-30T07:47:14</EndDateLocal>
+                     <EndDateLocal>2015-11-30T07:47:14</EndDateLocal>
                      <Cabin>O</Cabin>
                      <ClassOfService>O</ClassOfService>
                  </Air>
              </Segments>
              <RecordLocator>Air Locator</RecordLocator>
              <BookingSource>Sample Itin for Disrupt</BookingSource>
-             <DateBookedLocal>2014-10-30T03:47:14</DateBookedLocal>
+             <DateBookedLocal>2015-08-30T03:47:14</DateBookedLocal>
            </Booking>
          </Bookings>
          </Itinerary>
    
-    **Hack tip :** More details on the Itinerary API v1.1. [here](https://developer.concur.com/api-documentation/web-services/itinerary/itinerary-resource/itinerary-resource-get)
+    **Hack tip :** More details on the Itinerary API v1.1. [here](https://developer.concur.com/itinerary-tmc-and-third-party-developers/itinerary-resource/itinerary-resource-get)
          
     POST Expense Report Header to Concur: 
 
          Request Type = POST
          Authorization = OAuth <your access token>
-         URI = https://www.concursolutions.com/api/expense/expensereport/v1.1/report
-         ContentType = Application/XML
+         URI = https://www.concursolutions.com/api/v3.0/expense/reports
+         ContentType = Application/JSON
+         Accept = Application/JSON
          Body = 
-         <Report xmlns="http://www.concursolutions.com/api/expense/expensereport/2011/03">
-             <Name>Disrupt Hackathon NYC Trip</Name>
-             <Purpose>All Hackathon Expenses</Purpose>
-             <Comment>Includes hotel and meals.</Comment>
-             <OrgUnit1>US</OrgUnit1>
-             <OrgUnit3>Bellevue</OrgUnit3>
-             <Custom1>Client</Custom1>
-             <Custom2>Local</Custom2>
-             <UserDefinedDate>2014-05-01 15:15:07.0</UserDefinedDate>
-         </Report>
-    **Hack tip 1:** You can POST using JSON by setting the header to `Content-Type:application/json` and checking out a sample JSON body in our [Swagger](https://www.concursolutions.com/api/docs/index.html#!/Entries) doc.  Note that the examples here use v1.1, and those shown in Swagger use v3.0.
+         {
+              "Name": "Disrupt Hackathon NYC Trip",
+              "Purpose": "All Hackathon Expenses",
+              "Comment": "Includes hotel and meals.",
+              "OrgUnit1": "US",
+              "OrgUnit3": "Bellevue",
+              "Custom1": "Client",
+              "Custom2": "Local",
+              "UserDefinedDate": "2015-11-01 15:15:07.0"
+          }
+    **Hack tip 1:** You can POST using JSON by setting the header to `Content-Type:application/json` and checking out a sample JSON body in our [Swagger](https://www.concursolutions.com/api/docs/index.html#!/Reports) doc.  Note that the examples here use v1.1, and those shown in Swagger use v3.0.
 
     **Hack tip 2**: You need to generate a report header to be able to submit an expense entry.  A collection of entries is a report.
         
@@ -233,28 +228,33 @@ The subsections below provide a more detailed information on how to:
 
          Request Type = GET
          Authorization = OAuth <your access token>
-         URI = https://www.concursolutions.com/api/expense/expensereport/v2.0/Reports/?reportcountry=US
+         URI = https://www.concursolutions.com/api/v3.0/expense/reports
          ContentType = Application/JSON
+
+    GET Expense Group Configuration
+
+         Request Type = GET
+         Authorization = OAuth <your access token>
+         URI = https://www.concursolutions.com/api/v3.0/expense/expensegroupconfigurations
+         Accept = Application/JSON
 
     POSTing Expense Report Entry:
 
          Request Type = POST
          Authorization = OAuth <your access token>
-         URI = https://www.concursolutions.com/api/expense/expensereport/v1.1/report/B6F4FD62FB424911A3B8/entry
-         ContentType = Application/XML
+         URI = https://www.concursolutions.com/api/v3.0/expense/entries
+         ContentType = Application/JSON
+         Accept = Application/JSON
          Body = 
-         <ReportEntries xmlns="http://www.concursolutions.com/api/expense/expensereport/2011/03">
-         <Expense>
-             <CrnCode>USD</CrnCode>
-             <ExpKey>BRKFT</ExpKey>
-             <Description>Starbucks for Breakfast</Description>
-             <TransactionDate>2014-05-01</TransactionDate>
-             <TransactionAmount>15.54</TransactionAmount>
-             <Comment>Breakfast meeting</Comment>
-             <VendorDescription>Starbucks</VendorDescription>
-             <IsPersonal>N</IsPersonal>
-         </Expense>
-         </ReportEntries> 
+         {
+            "ExpenseTypeCode": "BRKFT",
+            "PaymentTypeID":"<PAYMENT TYPE ID FROM EXPENSE GROUP CONFIGURATION",
+            "ReportID": "<REPORT ID FROM GET EXPENSE REPORT DETAILS/POST EXPENSE REPORT>",
+            "TransactionAmount": "3.50",
+            "TransactionCurrencyCode": "USD",
+            "TransactionDate": "2015-08-31",
+            "VendorDescription": "Starbucks"
+          }
   2. **Pushing dummy expense data to Concur using the app**
    
    You can access the web version of Concur at http://concursolutions.com/ or get the mobile app from [App Store](https://itunes.apple.com/us/app/concur-travel-receipts-expense/id335023774?mt=8) or [Google Play](https://play.google.com/store/apps/details?id=com.concur.breeze).
